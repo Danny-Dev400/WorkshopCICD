@@ -61,6 +61,7 @@ public class UITestRunner extends BaseTest {
         moviesPage.clickInFilter().putActionFilter().clickInFilter().applyFilters();
         MovieDetailsPage movieDetailsPage = moviesPage.selectRandomMovie();
         Assert.assertEquals(movieDetailsPage.containsFilter("Action"),Boolean.TRUE);
+
     }
 
     @Severity(SeverityLevel.NORMAL)
